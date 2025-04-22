@@ -17,7 +17,7 @@ async function searchImages() {
   const results = data.results;
 
   if (page === 1) {
-    searchResultsEl.innerHTML = ""; // 清空上一次的搜尋結果
+    searchResultsEl.innerHTML = ""; // remove the last time results
   }
 
   results.forEach((result) => {
