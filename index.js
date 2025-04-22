@@ -31,7 +31,11 @@ async function searchImages() {
     const imageLink = document.createElement("a");
     imageLink.href = result.links.html;
     imageLink.target = "_blank";
-    imageLink.textContent = result.alt_description || "View Image";
+    imageLink.innerHTML =
+      "<span style='font-weight: 600; color: blue '>Description:</span> " +
+      (result.alt_description || "View Image");
+
+    // result.alt_description || "View Image";
 
     imageWrapper.appendChild(image);
     imageWrapper.appendChild(imageLink);

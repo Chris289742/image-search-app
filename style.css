@@ -40,6 +40,7 @@ form button {
     padding: 10px 20px;
     cursor: pointer;
     margin-left: 10px;
+    box-shadow: 1px 1px 2px 0px gray;
 }
 
 form button:hover {
@@ -54,11 +55,11 @@ form button:hover {
     color: #000000;
     background-color: #fff;
     padding: 10px;
-    transition: background-color 0.3s ease-in-out;
 }
 
 #show-more-button:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .search-results {
