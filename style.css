@@ -1,0 +1,103 @@
+body {
+    font-family: "National Park", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#search-input {
+    border: 1px solid #0d7fa5;
+    border-radius: 4px;
+    width: 400px;
+    height: 35px;
+    box-shadow: 2px 2px 3px 0px gray;
+}
+
+h1 {
+    color: #0d7fa5;
+    font-weight: 150;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+form button {
+    background-color: #0d7fa5;
+    color: white;
+    border: none;
+    height: 39px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+form button:hover {
+    background-color: #0b5f7a;
+}
+
+#show-more-button {
+    margin: 10px auto;
+    display: none;
+    text-align: center;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #fff;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#show-more-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.search-result {
+    width: 30%;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 1px solid #0d7fa5;
+    box-shadow: 1px 1px 2px 0px gray;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+
+.search-results img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.search-results a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.search-result:hover a {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.search-result:hover img {
+    transform: scale(1.05);
+}
